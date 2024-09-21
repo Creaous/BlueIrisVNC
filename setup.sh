@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp
 git clone https://github.com/Creaous/BlueIrisVNC.git /tmp/bivnc
-sudo apt-get install git wait-for-it tigervnc-viewer feh xorg-server sddm
+sudo apt-get install git wait-for-it tigervnc-viewer feh xorg sddm
 sudo useradd viewer
 sudo mkdir -p /home/viewer/.vnc
 sudo mkdir -p /home/viewer/.config/i3
