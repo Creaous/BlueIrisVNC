@@ -49,6 +49,9 @@ sudo chmod 700 /home/viewer/start.sh
 sudo chmod +x /home/viewer/start.sh
 sudo -u viewer vncpasswd
 
+# disable sleep
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
 # configure ip address
 read -p "Please enter the IP address to configure (default is 127.0.0.1): " IP_ADDRESS
 IP_ADDRESS=${IP_ADDRESS:-127.0.0.1}
