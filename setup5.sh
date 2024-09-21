@@ -21,6 +21,9 @@ if [ -d /home/viewer ]; then
         echo "Removing previous configuration..."
         # remove previous configuration
         sudo pkill -u viewer
+        sleep 5 # wait for the process to end
+        sudo pkill -u viewer
+        sleep 5 # wait for the process to end
         sudo userdel --remove viewer
         sudo rm -rf /home/viewer
     else
