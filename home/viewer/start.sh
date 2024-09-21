@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Change 127.0.0.1 to your VNC server IP address.
 HOST=${1:-${VNC_HOST:-127.0.0.1}}
 
 while true; do
