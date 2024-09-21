@@ -7,5 +7,7 @@ sudo mkdir -p /home/viewer/.vnc
 sudo mkdir -p /home/viewer/.config/i3
 sudo cp -r /tmp/bivnc/home/viewer/* /home/viewer
 sudo cp -r /tmp/bivnc/etc/sddm.conf.d/* /etc/sddm.conf.d
+sudo chmod -R 755 /home/viewer
+sudo chown -R viewer:viewer /home/viewer
 sudo chmod 700 /home/viewer/start.sh
 sudo chmod +x /home/viewer/start.sh
