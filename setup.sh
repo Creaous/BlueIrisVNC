@@ -47,6 +47,7 @@ sudo chmod -R 755 /home/viewer
 sudo chown -R viewer:viewer /home/viewer
 sudo chmod 700 /home/viewer/start.sh
 sudo chmod +x /home/viewer/start.sh
+sudo -u viewer vncpasswd
 
 # configure ip address
 read -p "Please enter the IP address to configure (default is 127.0.0.1): " IP_ADDRESS
