@@ -1,4 +1,11 @@
+# Run xrandr to set the resolution of output HDMI-2 to 1920x1080
 exec --no-startup-id xrandr --output HDMI-2 --mode "1920x1080"
+
+# Run xset to disable screensaver and power management
 exec --no-startup-id xset s off -dpms
+
+# Run feh to set the background image using /home/viewer/background.jpg
 exec --no-startup-id feh --bg-scale /home/viewer/background.jpg
+
+# Execute the viewer startup script
 exec bash /home/viewer/start.sh
