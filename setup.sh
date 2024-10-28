@@ -72,6 +72,9 @@ sudo -u viewer vncpasswd
 # Disable sleep modes to prevent interruptions
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
+# Enable SDDM
+sudo systemctl enable sddm
+
 # Configure IP address for VNC connection (default: 127.0.0.1)
 read -p "Please enter the IP address to configure (default is 127.0.0.1): " IP_ADDRESS
 IP_ADDRESS=${IP_ADDRESS:-127.0.0.1}
