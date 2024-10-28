@@ -44,7 +44,7 @@ fi
 # Clone BlueIrisVNC repository for configuration files
 echo "Creating new configuration..."
 cd /tmp
-git clone https://github.com/Creaous/BlueIrisVNC.git /tmp/bivnc
+sudo git clone https://github.com/Creaous/BlueIrisVNC.git /tmp/bivnc
 
 # Install required packages
 sudo apt-get install git wait-for-it tigervnc-viewer tightvncpasswd feh xorg sddm i3
