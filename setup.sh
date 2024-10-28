@@ -57,6 +57,7 @@ sudo mkdir -p /home/viewer/.config/i3
 # Copy configuration files from repository
 sudo cp -r /tmp/bivnc/home/viewer/* /home/viewer
 sudo cp -r /tmp/bivnc/home/viewer/.config/i3/* /home/viewer/.config/i3
+sudo mkdir -p /etc/sddm.conf.d
 sudo cp -r /tmp/bivnc/etc/sddm.conf.d/* /etc/sddm.conf.d
 
 # Set permissions for viewer user and files
